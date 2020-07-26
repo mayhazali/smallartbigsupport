@@ -1,16 +1,8 @@
 import React, {  Component  } from 'react';
 import './App.css';
-import firebase from 'firebase';
-import firebaseConfig from './firebaseconfig';
 import './styles.css';
 import HomeIcon from './Home.jpg';
 
-var client = firebaseConfig;
-var provider = new firebase.auth.GoogleAuthProvider();
-function signIn()
-{
-  client.auth().signInWithRedirect(provider);
-}
 class ArtistProfile extends Component {
   render(){
     return (<div>
